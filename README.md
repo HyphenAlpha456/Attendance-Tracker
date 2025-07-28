@@ -39,7 +39,7 @@ Traditional attendance systems are inefficient, prone to manipulation, and time-
 - **Backend:** Flask (Python Microframework)
 - **AI/ML:** TensorFlow/Keras + FaceNet
 - **Image Processing:** OpenCV
-- **Deployment Ready:** Can be hosted on Heroku, Render, or Railway
+
 
 ---
 
@@ -53,10 +53,7 @@ Traditional attendance systems are inefficient, prone to manipulation, and time-
 
 ---
 
-## 🖼️ Screenshots
 
-> Add your screenshots or demo GIF here  
-> _e.g., registration page, webcam view, attendance status_
 
 ---
 
