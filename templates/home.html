@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Tracking Portal | NIT Durgapur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #0066ff, #3399ff);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-box {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            width: 200px;
+            margin: 10px;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 30px;
+        }
+
+        .btn-admin {
+            background-color: #ffffff;
+            color: #0066ff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-admin:hover {
+            background-color: #0066ff;
+            color: white;
+        }
+
+        .btn-student {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-student:hover {
+            background-color: white;
+            color: #0066ff;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container container-box">
+        <h1>Welcome to Attendance Portal</h1>
+        <p><strong>NIT Durgapur</strong><br>Track attendance securely with face recognition</p>
+        <div>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-admin">Admin</a>
+            <a href="{{ url_for('student_portal') }}" class="btn btn-student">Student</a>
+        </div>
+        <footer>
+            &copy; 2025 Attendance System | Developed at NIT Durgapur
+        </footer>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
